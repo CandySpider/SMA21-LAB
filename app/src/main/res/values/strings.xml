@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">SMA-Laborator</string>
+        <string-array name="colors_array">
+            <item>Blue</item>
+            <item>Red</item>
+            <item>Yellow</item>
+            <item>Green</item>
+            <item>Black</item>
+            <item>Pink</item>
+            <item>Purple</item>
+        </string-array>
+
+
 </resources>
