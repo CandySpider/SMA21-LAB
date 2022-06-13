@@ -9,6 +9,7 @@
             <item>Pink</item>
             <item>Purple</item>
         </string-array>
+    <string name="chooser_title">Pick an app to share the name with…</string>
 
 
 </resources>
