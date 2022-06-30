@@ -1,8 +1,10 @@
 package com.example.sma_laborator;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.sma_laborator.lifecycle.*;
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -11,6 +13,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -20,12 +23,16 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sma_laborator.lifecycle.ActivityA;
+
 public class MainActivity extends AppCompatActivity {
       private EditText eName;
       private Button bClick;
       private TextView tName;
       private Button bShare;
       private Button bSearch;
+      private Button bLifecycle;
+      private Button bRandom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         tName = (TextView) findViewById(R.id.tName);
         bShare = findViewById(R.id.bShare);
         bSearch = findViewById(R.id.bSearch);
+        bLifecycle = findViewById(R.id.lifecycleButton);
+        bRandom = findViewById(R.id.bRandom);
 
         AlertDialog.Builder myAlert = new AlertDialog.Builder(this);
 
@@ -154,6 +163,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
+        bLifecycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "context?" + getApplicationContext());
+                Log.d(TAG, "context?" + this);
+                startActivity(new Intent(getApplicationContext(), ActivityA.class));
+
+            }
+        });
+       bRandom.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+
+           }
+       });
     }
 
 

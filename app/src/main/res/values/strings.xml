@@ -1,15 +1,17 @@
 <resources>
     <string name="app_name">SMA-Laborator</string>
-        <string-array name="colors_array">
-            <item>Blue</item>
-            <item>Red</item>
-            <item>Yellow</item>
-            <item>Green</item>
-            <item>Black</item>
-            <item>Pink</item>
-            <item>Purple</item>
-        </string-array>
+    <string-array name="colors_array">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Black</item>
+        <item>Pink</item>
+        <item>Purple</item>
+    </string-array>
     <string name="chooser_title">Pick an app to share the name with…</string>
+    <string name="start_a">Start A</string>
+    <string name="start_b">Start B</string>
 
 
 </resources>

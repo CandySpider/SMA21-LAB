@@ -90,8 +90,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:onClick="clicked"
         android:text="Randomize"/>
+
+    <Button
+        android:id="@+id/lifecycleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start lifecycle"
+        android:translationX="140dp"
+        android:translationY="50dp" />
 
 
 </RelativeLayout>
